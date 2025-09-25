@@ -1,13 +1,13 @@
 Algoritmo Sin_titulo
-	Escribir "Dime 3 números y te dire cual es el mayor" 
+	Escribir "Dime 3 nÃºmeros y te dire cual es el mayor"    //Le indicamos que nos pregunte 3 nÃºmeros
 	Leer a, b, c
-	Si a> b y a>c Entonces
-		Escribir "El número mas grande es: ", a
+	Si a> b y a>c Entonces                                  //Creamos un Si..Entonces, para indicarle cuando es el nÃºmero grande
+		Escribir "El nÃºmero mas grande es: ", a
 	SiNo
 		Si b>a y b>c Entonces
-			Escribir "El número mas grande es: ", b
+			Escribir "El nÃºmero mas grande es: ", b         //Metemos uno dentro de otro para los 3 nÃºmeros
 		SiNo
-			Escribir"El número mas grande es: ", c
+			Escribir"El nÃºmero mas grande es: ", c          //Finalmente le decimos que diga la respuesta
 			Fin Si
 		Fin Si
 
