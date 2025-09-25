@@ -1,5 +1,5 @@
 //Andres Ara
-//25/09/2025
+//25/09/2025 
 Algoritmo Ejr1_Hackaton_Andres
 	Definir num_user, i, array Como Entero;
 	Dimension  array[10];
@@ -14,7 +14,7 @@ Algoritmo Ejr1_Hackaton_Andres
 		Escribir "Introduce un numero positivo: ",Sin Saltar;
 		Leer num_user;
 		Si num_user <= 0
-			Escribir "Debe ser un nº positivo";
+			Escribir "Debe ser un nï¿½ positivo";
 		FinSi
 	Mientras Que num_user <= 0
 	Para i = 0 Hasta 9 Con Paso 1 Hacer
