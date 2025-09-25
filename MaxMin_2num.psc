@@ -1,10 +1,10 @@
-Algoritmo MaxMin_2num
+Algoritmo MaxMin_2num_SM
 Definir num , i Como Entero
-	Escribir "Introduce un número"
+	Escribir "Introduce un nÃºmero"
 	Leer num
 	mayor<-num  //Cuando solo hay un numero ese numero es el mayor y el menor 
 	menor<-num
-	Para i<-1 Hasta 1 Con Paso 1 Hacer  //Preparado para por si hay que comparar más de dos números
+	Para i<-1 Hasta 1 Con Paso 1 Hacer  //Preparado para por si hay que comparar mÃ¡s de dos nÃºmeros
 		Escribir "Introduzca otro numero"
 		Leer num
 		Si num>mayor Entonces  //El nuevo numero pasara a ser el maximo
@@ -14,6 +14,6 @@ Definir num , i Como Entero
 			menor<-num
 		Fin Si
 	Fin Para
-	Escribir  "El número menor es " , menor //Resultados
-	Escribir  "El número mayor es " , mayor
+	Escribir  "El nÃºmero menor es " , menor //Resultados
+	Escribir  "El nÃºmero mayor es " , mayor
 FinAlgoritmo
