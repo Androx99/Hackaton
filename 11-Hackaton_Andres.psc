@@ -1,30 +1,33 @@
 //Andres Ara
 //25/09/2025 
-Algoritmo Ejr1_Hackaton_Andres
+//Array de 10 con números aleatorios. El usuario inserta números positivos y si existe dentro del array lo sustituye por 0
+Algoritmo Ejr11_Hackaton_Andres
+	//Definimos variables
 	Definir num_user, i, array Como Entero;
+	//Definimos el array y sus filas y columnas
 	Dimension  array[10];
 	
-	Para i = 0 Hasta 9 Con Paso 1 Hacer
-		array[i] = Aleatorio(1,10);
-		Escribir array[i]," ",Sin Saltar;
+	//Generacion de los numeros aleatorios
+	Para i = 0 Hasta 9 Con Paso 1 Hacer // Para que se mueva entre las columnas
+		array[i] = Aleatorio(1,10);  //Darle un valor aleatorio
+		Escribir array[i]," ",Sin Saltar; //Mostrar las filas en pantalla
 	FinPara
-	Escribir "";
+	Escribir ""; //Salto de linea
 	
-	Repetir
-		Escribir "Introduce un numero positivo: ",Sin Saltar;
-		Leer num_user;
-		Si num_user <= 0
-			Escribir "Debe ser un nï¿½ positivo";
+	//Pedirle al usuario un numero positivo
+	Repetir //Entra en bucle hasta que se introduzca un numero postivio entre el 1 y 10
+		Escribir "Introduce un numero positivo entre el 1 y el 10: ",Sin Saltar; //Entra-Pedimos nº al usuario
+		Leer num_user; //Salida
+		Si num_user <= 0 //Verificamos que el numero sea positivo
+			Escribir "Debe ser un n? positivo 1 y el 10"; //Texto error
 		FinSi
-	Mientras Que num_user <= 0
-	Para i = 0 Hasta 9 Con Paso 1 Hacer
-		Si array[i] = num_user 
-			Escribir "Los numeros coinciden, sustituyendo por 0.";
+	Mientras Que num_user <= 0 Y num_user > 10
+	
+	//Eliminar los numeros en el array que coincidan
+	Para i = 0 Hasta 9 Con Paso 1 Hacer //Para que se mueva entre las columnas
+		Si array[i] = num_user //Si el numero coincide lo vuelve 0
 			array[i] = 0;
 		FinSi
-	FinPara
-	Para i = 0 Hasta 9 Con Paso 1 Hacer
-		Escribir array[i]," ",Sin Saltar;
-	FinPara
-	
+		Escribir array[i]," ",Sin Saltar; //Mostrar el array cambiado en pantalla
+	FinPara	
 FinAlgoritmo
